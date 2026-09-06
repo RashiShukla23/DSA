@@ -14,7 +14,19 @@ public class Main{
             x = x + 100;
         }
 
+        //multiple if else
+        if (x > 100){
+            x += 2000; // x = x + 2000
+
+        }else if ( x > 150){
+            x -=200;
+        } else{
+            x *= 10;
+        }
+
         System.out.println(x);
+
+
         
     }
 
