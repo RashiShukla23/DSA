@@ -20,7 +20,14 @@ public class Main{
 
         //print the array
         for(int i=0 ; i<n ; i++){
-            System.out.println(arr[i] + " ");
+            System.out.print(arr[i] + " ");
+        }
+
+        // array for an object
+        String[] str = new String[5];
+        for(int i=0; i<str.length; i++){
+            str[i] = in.next();
+            System.out.print(str[i] + " ");
         }
 
 
