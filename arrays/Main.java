@@ -1,13 +1,29 @@
+import java.util.Scanner;
+
 public class Main{
     public static void main(String[] args){
-        // decleration of array
-        
-        int[] rollno = new int[5];
-        //int[] rollno = {13,23,14,15,10};
-        System.out.println(rollno[1]);
+        //taking input and printing
+        Scanner in = new Scanner(System.in);
 
-        String[] arr = new String[5];
-        System.out.println(arr[1]);
+        //now i need to know what should be the size of thr array
+        System.out.println("Enter the size of the array ");
+        int n = in.nextInt();
+
+        // now i know the size so i will create an array
+        int[] arr = new int[n];
+
+        //array has been initialesd now we hav eto fill the array
+        System.out.println("Enter " + n + " elements");
+        for(int i=0; i<n ; i++){
+            arr[i] = in.nextInt();
+        }
+
+        //print the array
+        for(int i=0 ; i<n ; i++){
+            System.out.println(arr[i] + " ");
+        }
+
+
     }
 
 }
