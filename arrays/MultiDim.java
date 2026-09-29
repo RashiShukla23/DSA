@@ -38,8 +38,8 @@ public class MultiDim{
        //for first loop i signifies rows it will go to i'th row [0][0] now in i'th row it will fill its coloumns by using j loop {internal for loop}
        //[0][0]-->[0][1]-->[0][2]-->[0,3] intranl loop finesd now go to next row
        //[1][0]-->[1][1]-->[1][2]-->[1][3] and so on
-       for(int i=0; i<rows ; i++){
-        for(int j=0; j<col ; j++){
+       for(int i=0; i<arr.length ; i++){
+        for(int j=0; j<arr[1].length ; j++){
             //enter the elements in the coloumns now
             arr[i][j] = in.nextInt();
         }
@@ -47,8 +47,8 @@ public class MultiDim{
 
        //now print the matrix
        System.out.println("Your matrix: ");
-       for(int i=0;i<rows;i++){
-        for(int j=0; j<col; j++){
+       for(int i=0;i<arr.length;i++){
+        for(int j=0; j<arr[1].length; j++){
             System.out.print(arr[i][j] + " ");
         }
         System.out.println();
